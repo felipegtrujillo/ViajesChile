@@ -17,4 +17,66 @@
     width: 2rem;
     height: 2rem;
   }
+
+  #QuienesSomos  h1 {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  /* repeti la clase y puse de nuevo la etiqueta h2, por que si la ponia arriba despues
+   del h2 no me tomaba el cambio del h1
+   */
+  #Destacados h2 { 
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  #Contacto h3 { 
+    color: white;
+    font-size: 1.5rem;
+  }
+
+
+  #QuienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+  .Grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: center;
+    grid-gap: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .GridItem {
+    border: 1px solid #000;
+    text-align: center;
+  }
+
+  #Destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .Content-Cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #Contacto {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
   
