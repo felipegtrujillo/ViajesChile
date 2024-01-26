@@ -137,9 +137,9 @@
       <section class="bg-black" id="Destacados">
       <h2> Destacados</h2> 
       <div class="container">
-      <div class="row justify-content-between gap-4">
+      <div class="row justify-content-center gap-5">
             <div class="card-header border border-light" style="width: 15rem;">
-               <img src="assets/img/card1.jpg" class="img-fluid" alt="...">
+               <img src="assets/img/card1.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#CardN1">
                 <div class="card-body font-card-color">
                   <h4 class="card-title text-light"> Some beautigul places </h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -149,7 +149,7 @@
             </div>
          
             <div class="card-header border border-light" style="width: 15rem;">
-                <img src="assets/img/card2.jpg" class="img-fluid" alt="...">
+                <img src="assets/img/card2.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#CardN2">
                 <div class="card-body font-card-color">
                   <h4 class="card-title text-light">  Get into to nature </h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -160,7 +160,7 @@
         
 
             <div class="card-header border border-light" style="width: 15rem;">
-                <img src="assets/img/card3.jpg" class="img-fluid" alt="...">
+                <img src="assets/img/card3.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#CardN3">
                 <div class="card-body font-card-color">
                   <h4 class="card-title text-light">  Some beautigul places </h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -171,7 +171,7 @@
         
         
             <div class="card-header border border-light" style="width: 15rem;">
-                <img src="assets/img/card4.jpg" class="img-fluid" alt="...">
+                <img src="assets/img/card4.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#CardN4">
                 <div class="card-body font-card-color">
                   <h4 class="card-title text-light">  Get into to nature </h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -181,6 +181,88 @@
             </div>  
       </div>    
       </div> 
+
+       <!----------------------VENTANAS MODALES PARA TARJETAS ---------------------->
+
+
+              <!-- Modal para tarjeta N1-->
+              <div class="modal fade" id="CardN1" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="miModalLabel">Card Numero #1</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Contenido de la Modal -->
+                      <img src="assets/img/card1.jpg" alt="Card 1" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <!-- Modal para tarjeta N2-->
+                <div class="modal fade" id="CardN2" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="miModalLabel">Card Numero #2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Contenido de la Modal -->
+                        <img src="assets/img/card2.jpg" alt="Card 2" class="img-fluid">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                  <!-- Modal para tarjeta N3-->
+                  <div class="modal fade" id="CardN3" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="miModalLabel">Card Numero #3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Contenido de la Modal -->
+                        <img src="assets/img/card3.jpg" alt="Card 3" class="img-fluid">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal para tarjeta N4-->
+                <div class="modal fade" id="CardN4" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="miModalLabel">Card Numero #2</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Contenido de la Modal -->
+                      <img src="assets/img/card4.jpg" alt="Card 4" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <!---------------------- FIN VENTANAS MODALES PARA TARJETAS ---------------------->
+              
+         </div>
       </section>
 
         <section class="bg-black" id="Contacto">
@@ -198,7 +280,27 @@
                 <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
              </div>
-             <button type="button" class="btn btn-primary btn-color">Enviar</button>
+             <button type="button" class="btn btn-primary btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal" >Enviar</button>
+
+     <!----------------------VENTANA MODALES PARA BOTON ENVIAR ---------------------->
+              <!-- Modal para boton enviar de formulario -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p> Recuerde llenar todos los campos antes de enviar el mensaje</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+     <!---------------------- FIN VENTANA MODALES PARA BOTON ENVIAR ---------------------->
          </div>
         </section>
 
@@ -209,17 +311,17 @@
             VIAJES CHILE
          </div>
          <div class="iconos"> 
-            <a href="https://github.com/" alt="github">
-            <i class="fa-brands fa-square-github"> </i>
+            <a href="https://github.com" alt="github">
+             <i class="fa-brands fa-square-github"></i>
             </a>
-            <a href="https://www.linkedin.com/" alt="linkedin">
-            <i class="fa-brands fa-linkedin"> </i>
+            <a href="https://www.linkedin.com" alt="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="https://twitter.com/?lang=es"  alt="twitter">
-            <i class="fa-brands fa-square-x-twitter"> </i>
+            <i class="fa-brands fa-square-x-twitter"></i>
             </a>
-            <a href="https://www.facebook.com/">
-            <i class="fa-brands fa-square-facebook"  alt="facebook"> </i>
+            <a href="https://www.facebook.com">
+            <i class="fa-brands fa-square-facebook"  alt="facebook"></i>
             </a>
          </div>
      </footer>
