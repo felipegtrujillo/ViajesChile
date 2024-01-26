@@ -1,17 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 * {
   margin: 0px;
   border: 0px;
   padding: 0px;
-  font-family: Cabin, Lobster;
+  font-family: PT Sans;
 }
 
 .navbar-custom {
+    top: 0;
     background-color: #2e9ba6 ; /* Cambia esto al color que desees */
     color: white; /* Color del texto */
+    width: 100%;
     position: sticky;
     z-index: 10;
+  }
+
+ #footer a {
+    color: white;
+  }
+
+  .ViajesChile {
+    color: white;
   }
 
   .logo-inicial {
@@ -61,36 +71,19 @@
   }
 
 
-  #QuienesSomos {
+  #QuienesSomos  {
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-  .Grilla {
-    display: grid;
-    grid-template-columns: repeat(3, 18rem);
-    justify-content: center;
-    grid-gap: 4rem;
-    margin-bottom: 2rem;
-  }
-
-  .GridItem {
-    border: 1px solid #000;
-    text-align: center;
-  }
-
   #Destacados {
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-  }
-
-  .Content-Cards {
-    display: flex;
-    justify-content: center;
     gap: 1rem;
   }
 
@@ -101,7 +94,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  
+  }
+
+  .card-text {
+    color: white;
   }
 
   .btn-color {
@@ -109,12 +105,8 @@
   }
   
   #footer {
-    padding-left: 15rem;
-    display: flex;
-    align-items: center;
-    gap:40rem;
-    height: 4rem;
     background-color:  #04ccf4 ;
+    height: 3rem;
   }
 
   /* pantalla cuando es menor a 800px */
@@ -123,4 +115,7 @@
     #QuienesSomos {
     display: none;
   }
+
+
+
   }

@@ -41,7 +41,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- JS Propio -->
-    <script src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/index.js"></script>
   </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
@@ -98,11 +98,12 @@
         </section>
 
 
-    <main>
+    <main >
         <section class="bg-black" id="QuienesSomos">
             <h1> Quienes somos ?</h1>
-            <div class="Grilla">
-                <div class="GridItem">
+            <div class="container">
+            <div class="row justify-content-center g-4">
+                <div class="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Viajes">
                  <div class="conainer-icon" >
                  <i class="fa-solid fa-plane invert-color"></i>
                   </div>
@@ -111,7 +112,7 @@
                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, eligendi voluptatum quisquam,
                      vel eaque neque, ad dignissimos a soluta nostrum nemo tempora ipsa. Porro ipsum harum sint commodi repellendus amet?</p>
                 </div>
-                <div class="GridItem">
+                <div class="col"data-bs-toggle="tooltip" data-bs-placement="top" title="Lugares" >
                     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, eligendi voluptatum quisquam,
                         vel eaque neque, ad dignissimos a soluta nostrum nemo tempora ipsa. Porro ipsum harum sint commodi 
                         repellendus amet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, eligendi voluptatum quisquam,
@@ -120,7 +121,7 @@
                      <i class="fa-solid fa-mountain invert-color"></i>
                    </div>
                 </div>
-                <div class="GridItem">
+                <div class="col" data-bs-toggle="tooltip" data-bs-placement="top" title="Rutas">
                   <div class="conainer-icon">
                   <i class="fa-solid fa-route invert-color"></i> 
                   </div>
@@ -130,43 +131,56 @@
                     vel eaque neque, ad dignissimos a soluta nostrum nemo tempora ipsa. Porro ipsum harum sint commodi repellendus amet?</p>
                 </div>
               </div>
+           </div>
         </section>
 
       <section class="bg-black" id="Destacados">
       <h2> Destacados</h2> 
-      <div class="Content-Cards">
-            <div class="card" style="width: 15rem;">
-                  <img src="assets/img/card1.jpg" class="img-fluid" alt="...">
+      <div class="container">
+      <div class="row justify-content-between gap-4">
+            <div class="card-header border border-light" style="width: 15rem;">
+               <img src="assets/img/card1.jpg" class="img-fluid" alt="...">
                 <div class="card-body font-card-color">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4 class="card-title text-light"> Some beautigul places </h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ex, ad repudiandae odio provident necessitatibus laborum.
+                  </p>
                 </div>
             </div>
          
-            <div class="card" style="width: 15rem;">
+            <div class="card-header border border-light" style="width: 15rem;">
                 <img src="assets/img/card2.jpg" class="img-fluid" alt="...">
                 <div class="card-body font-card-color">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4 class="card-title text-light">  Get into to nature </h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ex, ad repudiandae odio provident necessitatibus laborum quae.
+                  </p>
                 </div>
             </div>
         
 
-            <div class="card" style="width: 15rem;">
+            <div class="card-header border border-light" style="width: 15rem;">
                 <img src="assets/img/card3.jpg" class="img-fluid" alt="...">
                 <div class="card-body font-card-color">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4 class="card-title text-light">  Some beautigul places </h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ex, ad repudiandae odio provident necessitatibus laborum quae.
+                  </p>
                 </div>
              </div>
         
-
         
-            <div class="card" style="width: 15rem;">
+            <div class="card-header border border-light" style="width: 15rem;">
                 <img src="assets/img/card4.jpg" class="img-fluid" alt="...">
                 <div class="card-body font-card-color">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4 class="card-title text-light">  Get into to nature </h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ex, ad repudiandae odio provident necessitatibus laborum quae. 
+                  </p>
                 </div>
-            </div>
-          
-      </div>     
+            </div>  
+      </div>    
+      </div> 
       </section>
 
         <section class="bg-black" id="Contacto">
@@ -188,18 +202,26 @@
          </div>
         </section>
 
-         
     </main>
 
-     <footer id="footer">
-         <div class="invert-color"> VIAJES CHILE</div>
-         <div class="iconos-footer invert-color ms-2"> 
-          <i class="fa-brands fa-square-github"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-square-x-twitter"></i>
-          <i class="fa-brands fa-square-facebook"></i>
+     <footer class="d-flex justify-content-around align-items-center " id="footer">
+         <div class="ViajesChile">
+            VIAJES CHILE
          </div>
-
+         <div class="iconos"> 
+            <a href="https://github.com/" alt="github">
+            <i class="fa-brands fa-square-github"> </i>
+            </a>
+            <a href="https://www.linkedin.com/" alt="linkedin">
+            <i class="fa-brands fa-linkedin"> </i>
+            </a>
+            <a href="https://twitter.com/?lang=es"  alt="twitter">
+            <i class="fa-brands fa-square-x-twitter"> </i>
+            </a>
+            <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-square-facebook"  alt="facebook"> </i>
+            </a>
+         </div>
      </footer>
     
 </body>
